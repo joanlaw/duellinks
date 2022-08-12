@@ -4,27 +4,29 @@ const cartaSchema = mongoose.Schema({
   nombre: {
     type: String,
     unique: true,
-    required: true,
+    //required: true,
     trim: true
+
   },
   tipo_de_carta: {
     type: String,
-    required: true,
-    trim: true
+    //required: true,
+    trim: true,
+    //default: "normal"
   },
   atributo: {
     type: String,
-    required: true,
+    //required: true,
     trim: true
   },
   tipo: {
     type: String,
-    required: true,
+    //required: true,
     trim: true
   },
   nivel_rango: {
     type: Number,
-    required: true,
+    //required: true,
     trim: true
   },
   escala: {
