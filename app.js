@@ -14,7 +14,8 @@ const app = express()
 app.use(cors())
 app.use(morgan('dev'))
 app.use(fileUpload({
-    tempFileDir: '/uploads'
+    useTempFiles : true,
+    tempFileDir : './uploads'
 }))
 app.use(express.json())
 app.use(indexRoutes)
