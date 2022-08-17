@@ -7,6 +7,7 @@ import indexRoutes from './routes/index.routes.js'
 import cartasRoutes from './routes/cards.routes.js'
 
 const app = express()
+const cors = require('cors')
 
 
 app.use(cors())
