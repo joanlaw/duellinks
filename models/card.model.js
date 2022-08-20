@@ -4,27 +4,27 @@ const cartaSchema = mongoose.Schema({
   nombre: {
     type: String,
     unique: true,
-    required: true,
+   // required: true,
     trim: true
   },
   tipo_de_carta: {
     type: String,
-    required: true,
+  //  required: true,
     trim: true
   },
   atributo: {
     type: String,
-    required: true,
+   // required: true,
     trim: true
   },
   tipo: {
     type: String,
-    required: true,
+  //  required: true,
     trim: true
   },
   nivel_rango: {
     type: Number,
-    required: true,
+  //  required: true,
     trim: true
   },
   escala: {
@@ -42,6 +42,14 @@ const cartaSchema = mongoose.Schema({
   image: {
     pubic_id: String,
     secure_url: String
+  },
+  velocidad: {
+    type: Number,
+    trim: true
+  },
+  duracion: {
+    type: String,
+    trim: true
   }
 }, {
   timestamps: true
