@@ -42,14 +42,6 @@ const cartaSchema = mongoose.Schema({
   image: {
     pubic_id: String,
     secure_url: String
-  },
-  velocidad: {
-    type: Number,
-    trim: true
-  },
-  duracion: {
-    type: String,
-    trim: true
   }
 }, {
   timestamps: true
