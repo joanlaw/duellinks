@@ -19,7 +19,7 @@ export const createCards = async (req, res) => {
 
   try {
 
-    const { nombre, tipo_de_carta, atributo, tipo, nivel_rango, escala, rareza, limitacion, atk, def, descripcion, caja, estructura, selection_box, lote, fecha } = req.body
+    const { nombre, tipo_de_carta, atributo, tipo, nivel_rango, escala, rareza, limitacion, atk, def, descripcion, caja, estructura, selection_box, lote } = req.body
 
     const cartas = new Carta({
       nombre,
@@ -36,8 +36,7 @@ export const createCards = async (req, res) => {
       caja,
       estructura,
       selection_box,
-      lote,
-      fecha
+      lote
     })
 
     if (req.files?.image) {

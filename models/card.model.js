@@ -70,10 +70,6 @@ const cartaSchema = mongoose.Schema({
   lote: {
     type: String,
     trim: true
-  },
-  fecha: {
-    type: Date,
-    trim: true
   }
 }, {
   timestamps: true
