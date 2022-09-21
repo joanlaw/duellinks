@@ -36,7 +36,7 @@ const cartaSchema = mongoose.Schema({
     trim: true
   },
   limitacion: {
-    type: Number,
+    type: String,
     trim: true
   },
   image: {
