@@ -42,6 +42,38 @@ const cartaSchema = mongoose.Schema({
   image: {
     pubic_id: String,
     secure_url: String
+  },
+  atk: {
+    type: Number,
+    trim: true
+  },
+  def: {
+    type: Number,
+    trim: true
+  },
+  descripcion: {
+    type: String,
+    trim: true
+  },
+  caja: {
+    type: String,
+    trim: true
+  },
+  estructura: {
+    type: String,
+    trim: true
+  },
+  selection_box: {
+    type: String,
+    trim: true
+  },
+  lote: {
+    type: String,
+    trim: true
+  },
+  fecha: {
+    type: Date,
+    trim: tre
   }
 }, {
   timestamps: true
