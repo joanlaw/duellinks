@@ -51,6 +51,10 @@ const cartaSchema = mongoose.Schema({
     type: Number,
     trim: true
   },
+  materiales: {
+    type: String,
+    trim:true
+  },
   descripcion: {
     type: String,
     trim: true
@@ -68,6 +72,10 @@ const cartaSchema = mongoose.Schema({
     trim: true
   },
   lote: {
+    type: String,
+    trim: true
+  },
+  fecha_lanzamiento: {
     type: String,
     trim: true
   }
