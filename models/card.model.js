@@ -73,7 +73,7 @@ const cartaSchema = mongoose.Schema({
   },
   fecha: {
     type: Date,
-    trim: tre
+    trim: true
   }
 }, {
   timestamps: true
