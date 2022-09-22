@@ -17,6 +17,11 @@ const cartaSchema = mongoose.Schema({
    // required: true,
     trim: true
   },
+  atributo_ico: {
+    type: String,
+    trim: true
+    //Imagen para el atributo ya sea monstruo, magica o trampa
+  },
   tipo: {
     type: String,
   //  required: true,
@@ -26,6 +31,10 @@ const cartaSchema = mongoose.Schema({
     type: Number,
   //  required: true,
     trim: true
+  },
+  nivel_rango_ico:{
+    type: String,
+    trim:true
   },
   escala: {
     type: Number,
