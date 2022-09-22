@@ -27,8 +27,12 @@ const cartaSchema = mongoose.Schema({
   //  required: true,
     trim: true
   },
+  tipo_magica_trampa:{
+    type: String,
+    trim: true
+  },
   nivel_rango: {
-    type: Number,
+    type: String,
   //  required: true,
     trim: true
   },
@@ -53,20 +57,28 @@ const cartaSchema = mongoose.Schema({
     secure_url: String
   },
   atk: {
-    type: Number,
+    type: String,
+    trim: true
+  },
+  atk_ico:{
+    type: String,
     trim: true
   },
   def: {
-    type: Number,
+    type: String,
     trim: true
+  },
+  def_ico:{
+    type: String,
+    trim:true
   },
   materiales: {
     type: String,
     trim:true
   },
   descripcion: {
-    type: String,
-    trim: true
+    type: String
+    
   },
   caja: {
     type: String,

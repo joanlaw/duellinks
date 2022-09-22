@@ -19,7 +19,7 @@ export const createCards = async (req, res) => {
 
   try {
 
-    const { nombre, tipo_de_carta, atributo, atributo_ico, tipo, nivel_rango, nivel_rango_ico, escala, rareza, limitacion, atk, def, materiales, descripcion, caja, estructura, selection_box, lote, fecha_lanzamiento } = req.body
+    const { nombre, tipo_de_carta, atributo, atributo_ico, tipo, tipo_magica_trampa, nivel_rango, nivel_rango_ico, escala, rareza, limitacion, atk, atk_ico, def, def_ico, materiales, descripcion, caja, estructura, selection_box, lote, fecha_lanzamiento } = req.body
 
     const cartas = new Carta({
       nombre,
@@ -27,13 +27,16 @@ export const createCards = async (req, res) => {
       atributo,
       atributo_ico,
       tipo,
+      tipo_magica_trampa,
       nivel_rango,
       nivel_rango_ico,
       escala,
       rareza,
       limitacion,
       atk,
+      atk_ico,
       def,
+      def_ico,
       materiales,
       descripcion,
       caja,
