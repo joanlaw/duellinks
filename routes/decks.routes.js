@@ -10,12 +10,10 @@ import {
 const routerdecks = Router()
 
 //import fileUpload from 'express-fileupload'
-import { getCards } from '../controllers/cards.controllers.js'
+import { getDecks } from '../controllers/decks.controllers'
 
-routerdecks.get('/decks', getCards)
-//router.post('/decks', fileUpload({
-//  useTempFiles: true, tempFileDir: './uploads'
-//}), createCards)
+routerdecks.get('/decks', getDecks)
+routerdecks.post('/decks', createDecks)
 routerdecks.put('/cartas/:id', updateDecks)
 routerdecks.delete('/cartas/:id', deleteDecks)
 routerdecks.get('/cartas/:id', getDeck)

@@ -1,5 +1,5 @@
 import { truncateSync } from 'fs';
-import Carta from '../models/card.model.js'
+import Deck from '../models/deck.model.js'
 import { uploadImage, deleteImage } from '../utils/cloudinary.js'
 import fs from 'fs-extra'
 
@@ -7,7 +7,7 @@ import fs from 'fs-extra'
 //METODO GET 
 export const getDecks = async (req, res) => {
   try {
-    const decks = await Carta.find();
+    const decks = await Deck.find();
     res.json(decks)
   } catch (error) {
     return res.status(500).json({ message: error.message })
@@ -21,7 +21,7 @@ export const createDecks = async (req, res) => {
 
     const { nombre, habilidad, arquetipo, main_deck, extra_deck, side_deck  } = req.body
 
-    const decks = new Carta({
+    const decks = new Deck({
       nombre,
       habilidad,
       arquetipo,
