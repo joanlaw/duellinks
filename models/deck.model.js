@@ -41,11 +41,11 @@ const deckSchema = mongoose.Schema({
   },
   cartauno: {
     type: String,
-    trim
+    trim: true
 },
 cartados: {
   type: String,
-  trim
+  trim:true
 }
   /*nivel_rango_ico:{
     type: String,
