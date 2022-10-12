@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
 
 const deckSchema = mongoose.Schema({
-  nombre: {
+  jugador: {
     type: String,
     unique: true,
    // required: true,
@@ -17,24 +17,36 @@ const deckSchema = mongoose.Schema({
    // required: true,
     trim: true
   },
-  main_deck: {
+  arquetipo_image: {
+    type: String,
+   // required: true,
+    trim: true
+  },
+  engine: {
     type: String,
     trim: true
   },
-  extra_deck: {
+  top: {
     type: String,
   //  required: true,
     trim: true
   },
-  side_deck:{
+  puesto:{
     type: String,
     trim: true
-  }
- // nivel_rango: {
-  //  type: String,
-  //  required: true,
-   // trim: true
- // }
+  },
+  date: {
+    type: String,
+    trim: true
+  },
+  cartauno: {
+    type: String,
+    trim
+},
+cartados: {
+  type: String,
+  trim
+}
   /*nivel_rango_ico:{
     type: String,
     trim:true
