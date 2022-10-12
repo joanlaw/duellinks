@@ -29,7 +29,7 @@ const deckSchema = mongoose.Schema({
   side_deck:{
     type: String,
     trim: true
-  },
+  }
  // nivel_rango: {
   //  type: String,
   //  required: true,

@@ -55,7 +55,7 @@ export const deleteDecks = async (req, res) => {
   try {
 
     const decks = await
-      Carta.findByIdAndDelete(req.params.id)
+      Deck.findByIdAndDelete(req.params.id)
 
     if (!decks) return res.status(404).json({
       message: 'La carta no existe'
@@ -80,7 +80,7 @@ export const getDeck = async (req, res) => {
   try {
 
     const decks = await
-      Carta.findById(req.params.id)
+      Deck.findById(req.params.id)
 
     if (!decks) return res.status(404).json({
       message: 'La carta no existe'
