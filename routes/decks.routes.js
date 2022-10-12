@@ -14,8 +14,8 @@ const routerdecks = Router()
 
 routerdecks.get('/decks', getDecks)
 routerdecks.post('/decks', createDecks)
-routerdecks.put('/cartas/:id', updateDecks)
-routerdecks.delete('/cartas/:id', deleteDecks)
-routerdecks.get('/cartas/:id', getDeck)
+routerdecks.put('/decks/:id', updateDecks)
+routerdecks.delete('/decks/:id', deleteDecks)
+routerdecks.get('/decks/:id', getDeck)
 
 export default routerdecks
