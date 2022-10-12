@@ -102,7 +102,7 @@ export const updateDecks = async (req, res) => {
 
     const { id } = req.params;
     const decksUpdate = await
-      Carta.findByIdAndUpdate(id, req.body, {
+      Deck.findByIdAndUpdate(id, req.body, {
         new: true
       })
 
