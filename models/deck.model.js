@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
 
 const deckSchema = mongoose.Schema({
-  nombre: {
+  jugador: {
     type: String,
   //  unique: true,
    // required: true,
