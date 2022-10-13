@@ -19,10 +19,10 @@ export const createDecks = async (req, res) => {
 
   try {
 
-    const { jugador, habilidad, arquetipo, arquetipo_image, engine, top, puesto, date, cartauno, cartados  } = req.body
+    const { nombre, habilidad, arquetipo, arquetipo_image, engine, top, puesto, date, cartauno, cartados  } = req.body
 
     const decks = new Deck({
-      jugador,
+      nombre,
       habilidad,
       arquetipo,
       arquetipo_image,
