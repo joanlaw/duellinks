@@ -21,7 +21,7 @@ export const createDecks = async (req, res) => {
 
     const { jugador, habilidad, arquetipo, arquetipo_image, engine, top, puesto, date, mainuno, maindos, maintres, maincuatro, maincinco, mainseis, mainsiete, mainocho, mainnueve, maindiez,
     mainonce, maindoce, maintrece, maincatorce, mainquince, maindieciseis, maindiecisiete, maindieciocho, maindiecinueve, mainveinte, mainveintiuno, mainveintidos, mainveintitres, mainveinticuatro,
-  mainveinticinco, mainveintiseis, mainveinisiete, mainveintiocho, mainveintinueve, maintreinta, extrauno, extrados, extratres, extracuatro, extracinco, extraseis, extrasiete, extraocho, extranueve,
+  mainveinticinco, mainveintiseis, mainveintisiete, mainveintiocho, mainveintinueve, maintreinta, extrauno, extrados, extratres, extracuatro, extracinco, extraseis, extrasiete, extraocho, extranueve,
 extradiez, sideuno, sidedos, sidetres, sidecuatro, sidecinco, sideseis, sidesiete, sideocho, sidenueve, sidediez  } = req.body
 
     const decks = new Deck({
@@ -37,7 +37,7 @@ extradiez, sideuno, sidedos, sidetres, sidecuatro, sidecinco, sideseis, sidesiet
       maindos,
       maintres, maincuatro, maincinco, mainseis, mainsiete, mainocho, mainnueve, maindiez,
     mainonce, maindoce, maintrece, maincatorce, mainquince, maindieciseis, maindiecisiete, maindieciocho, maindiecinueve, mainveinte, mainveintiuno, mainveintidos, mainveintitres, mainveinticuatro,
-  mainveinticinco, mainveintiseis, mainveinisiete, mainveintiocho, mainveintinueve, maintreinta, extrauno, extrados, extratres, extracuatro, extracinco, extraseis, extrasiete, extraocho, extranueve,
+  mainveinticinco, mainveintiseis, mainveintisiete, mainveintiocho, mainveintinueve, maintreinta, extrauno, extrados, extratres, extracuatro, extracinco, extraseis, extrasiete, extraocho, extranueve,
 extradiez, sideuno, sidedos, sidetres, sidecuatro, sidecinco, sideseis, sidesiete, sideocho, sidenueve, sidediez
     })
 
