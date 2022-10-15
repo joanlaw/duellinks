@@ -132,7 +132,7 @@ const deckSchema = mongoose.Schema(
       type: String,
       trim: true,
     },
-    maintveinticuatro: {
+    mainveinticuatro: {
       type: String,
       trim: true,
 
