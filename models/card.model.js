@@ -17,11 +17,6 @@ const cartaSchema = mongoose.Schema({
    // required: true,
     trim: true
   },
-  atributo_ico: {
-    type: String,
-    trim: true
-    //Imagen para el atributo ya sea monstruo, magica o trampa
-  },
   tipo: {
     type: String,
   //  required: true,
@@ -31,14 +26,10 @@ const cartaSchema = mongoose.Schema({
     type: String,
     trim: true
   },
-  nivel_rango: {
-    type: String,
+  nivel_rango_link: {
+    type: Number,
   //  required: true,
     trim: true
-  },
-  nivel_rango_ico:{
-    type: String,
-    trim:true
   },
   escala: {
     type: Number,
@@ -49,7 +40,7 @@ const cartaSchema = mongoose.Schema({
     trim: true
   },
   limitacion: {
-    type: String,
+    type: Number,
     trim: true
   },
   image: {
@@ -60,17 +51,9 @@ const cartaSchema = mongoose.Schema({
     type: String,
     trim: true
   },
-  atk_ico:{
-    type: String,
-    trim: true
-  },
   def: {
     type: String,
     trim: true
-  },
-  def_ico:{
-    type: String,
-    trim:true
   },
   materiales: {
     type: String,
@@ -79,6 +62,10 @@ const cartaSchema = mongoose.Schema({
   descripcion: {
     type: String
     
+  },
+  efecto_pendulo: {
+    type: String,
+    trim: true
   },
   caja: {
     type: String,
@@ -93,6 +80,10 @@ const cartaSchema = mongoose.Schema({
     trim: true
   },
   lote: {
+    type: String,
+    trim: true
+  },
+  adicional: {
     type: String,
     trim: true
   },
