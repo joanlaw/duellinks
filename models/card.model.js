@@ -48,11 +48,11 @@ const cartaSchema = mongoose.Schema({
     secure_url: String
   },
   atk: {
-    type: String,
+    type: Number,
     trim: true
   },
   def: {
-    type: String,
+    type: Number,
     trim: true
   },
   materiales: {
