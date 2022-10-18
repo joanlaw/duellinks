@@ -36,8 +36,8 @@ const deckSchema = mongoose.Schema(
       type: String,
       trim: true,
     },
-    date: {
-      type: Date,
+    etiquetas: {
+      type: String,
       trim: true,
     },
     mainuno: {

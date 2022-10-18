@@ -19,7 +19,7 @@ export const createDecks = async (req, res) => {
 
   try {
 
-    const { jugador, habilidad, arquetipo, arquetipo_image, engine, top, puesto, date, mainuno, maindos, maintres, maincuatro, maincinco, mainseis, mainsiete, mainocho, mainnueve, maindiez,
+    const { jugador, habilidad, arquetipo, arquetipo_image, engine, top, puesto, etiquetas, mainuno, maindos, maintres, maincuatro, maincinco, mainseis, mainsiete, mainocho, mainnueve, maindiez,
     mainonce, maindoce, maintrece, maincatorce, mainquince, maindieciseis, maindiecisiete, maindieciocho, maindiecinueve, mainveinte, mainveintiuno, mainveintidos, mainveintitres, mainveinticuatro,
   mainveinticinco, mainveintiseis, mainveintisiete, mainveintiocho, mainveintinueve, maintreinta, extrauno, extrados, extratres, extracuatro, extracinco, extraseis, extrasiete, extraocho, extranueve,
 extradiez, sideuno, sidedos, sidetres, sidecuatro, sidecinco, sideseis, sidesiete, sideocho, sidenueve, sidediez  } = req.body
@@ -32,7 +32,7 @@ extradiez, sideuno, sidedos, sidetres, sidecuatro, sidecinco, sideseis, sidesiet
       engine,
       top,
       puesto,
-      date,
+      etiquetas,
       mainuno,
       maindos,
       maintres, maincuatro, maincinco, mainseis, mainsiete, mainocho, mainnueve, maindiez,
