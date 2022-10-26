@@ -95,6 +95,7 @@ export const getCard = async (req, res) => {
 
     const cartas = await
       Carta.findById(req.params.id)
+      Carta.findById(req.params.nombre)
 
     if (!cartas) return res.status(404).json({
       message: 'La carta no existe'
